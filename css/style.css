@@ -453,13 +453,45 @@ a.main-cta {
 	margin-bottom: 15px;
 	padding: 9px 10px;
 	width: 100%;
+	outline: none;
+}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  background-color: #FFFFFF;
+  border: 1px solid #a8a8a8;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
 }
 
 .form--feature input[type="text"]:focus,
 .form--feature input[type="email"]:focus,
 .form--feature select:focus {
 	outline: none;
-	border-color: #0c84b7;
 }
 
 .form--feature strong {
@@ -1696,4 +1728,3 @@ html {
 }
 
 }
-
