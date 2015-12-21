@@ -1728,3 +1728,10 @@ html {
 }
 
 }
+
+/* highlighting text field for on focus of join us link */
+input:focus,
+textarea:focus{
+background-color: #0c84b7;
+opacity: 0.8;
+}

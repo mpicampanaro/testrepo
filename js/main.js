@@ -1,5 +1,24 @@
+
 $(document).on('ready', function() {
 
+// trying to set focus on full name when join us is clicked-->
+  $('#joinus').click(function(){
+   $('#entry_2117597722').focus();
+  });
+
+  // begin scroll for main navigation links
+  $("#brands").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#brandsection").offset().top
+    }, 1000);
+});
+
+$("#marketing").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#marketingsection").offset().top
+  }, 1000);
+});
+//end of scroll for main navigation 
 
     $('[data-hook="menu"]').on('click', function () {
         $(this).toggleClass('is-active');
