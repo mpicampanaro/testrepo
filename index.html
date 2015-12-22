@@ -46,7 +46,7 @@
                             <form data-parsley-validate="" data-parsley-errors-messages-disabled="" action="https://docs.google.com/forms/d/1NI7Tgz0SxBshDUrug1p9b1mKMsHc0rXkzb7SyzkOTQI/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 
                                 <label class="form__label" for="entry_2117597722">Full Name*</label>
-                                <input required="" minlength="3" type="text" name="entry.2117597722" value="" id="entry_2117597722" dir="auto" aria-label="Full Name" title="" onclick="#joinus">
+                                <input required="" minlength="3" type="text" name="entry.2117597722" value="" id="entry_2117597722" dir="auto" aria-label="Full Name" title="">
 
                                 <label class="form__label" for="entry_847221070">Email Address*</label>
                                 <input required="" data-parsley-type="email" type="text" name="entry.847221070" value="" id="entry_847221070" dir="auto" aria-label="Email Address  " title="">
@@ -71,22 +71,22 @@
                                 </select>
 
 
-                                <label class="form__label" for="entry_1395791872">Brands I'm Interested In Reselling*</label>
+                                <label class="form__label" for="entry_1395791872">I'm Interested In Reselling* </label>
                                 <label class="form__label--inline">
                                     <!-- replaced <input type="checkbox" value="Xstories" />-->
-                                    <input type="checkbox" name="entry.151703101" value="XSories" id="group_151703101_1" role="checkbox" >
+                                    <input type="checkbox" name="entry.151703101" value="XSories" id="group_151703101_1" data-parsley-mincheck="1">
                                     <span>XSories</span>
                                 </label>
 
                                 <label class="form__label--inline">
                                     <!-- replaced <input type="checkbox" value="Phillips" />-->
-                                    <input type="checkbox" name="entry.151703101" value="Phillips" id="group_151703101_2" role="checkbox" >
+                                    <input type="checkbox" name="entry.151703101" value="Phillips" id="group_151703101_2">
                                     <span>Phillips</span>
                                 </label>
 
                                 <label class="form__label--inline">
                                     <!-- replaced <input type="checkbox" value="Z" />-->
-                                    <input type="checkbox" name="entry.151703101" value="Z" id="group_151703101_3" role="checkbox" data-parsley-checkmin="1" data-parsley-error-message="Please choose at least 1" required>
+                                    <input type="checkbox" name="entry.151703101" value="Z" id="group_151703101_3">
                                     <span>Z</span>
                                 </label>
 
@@ -102,7 +102,6 @@
                                     <input type="checkbox" name="entry.26627542" value="Join our mailing list" id="group_26627542_1" role="checkbox">
                                     <strong>Join our mailing list</strong>
                                 </label>
-
                                 <input type="submit" name="submit" value="Send Inquiry" id="ss-submit" class="btn btn--primary">
                             </form>
                         </div>

@@ -413,7 +413,7 @@ a.main-cta {
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 0.9;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .hero__title span {
@@ -422,7 +422,7 @@ a.main-cta {
 }
 
 .hero__description {
-	line-height: 2;
+	line-height: 1.5;
 	font-size: 1.6rem;
 }
 
@@ -465,9 +465,13 @@ textarea.parsley-success {
 
 input.parsley-error,
 select.parsley-error,
-textarea.parsley-error {
+textarea.parsley-error{
   background-color: #F2DEDE;
   border: 1px solid #EED3D7;
+}
+
+label.parsley-error {
+	background-color: #F2DEDE;
 }
 
 .parsley-errors-list {
@@ -1727,11 +1731,4 @@ html {
 	left: -1684px;
 }
 
-}
-
-/* highlighting text field for on focus of join us link */
-input:focus,
-textarea:focus{
-background-color: #0c84b7;
-opacity: 0.8;
 }
