@@ -26,10 +26,15 @@ $("#marketing").click(function() {
   });
 
   $('#ss-form').parsley().on('field:validated', function() {
-    var ok = $('.parsley-error').length === 0;
-  })
-  .on('form:submit', function() {
-      
+
+  }).on('form:submit', function() {
+
+    $.post("https://docs.google.com/forms/d/1NI7Tgz0SxBshDUrug1p9b1mKMsHc0rXkzb7SyzkOTQI/formResponse", $("#ss-form").serialize());
+
+    $(".hero__title").html("THANK YOU!");
+    $(".hero__description").html("Your message has been sent to a representative at XS Commerce.");
+    $("#ss-form").trigger("reset");
+
   });
 
 
